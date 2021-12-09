@@ -1,0 +1,14 @@
+<li [ngClass]="{ 'list-group-item': true,
+'list-group-item-success': color === true,
+'list-group-item-danger': color === false  }" > 
+    <h1> {{ postTitle }}</h1>
+    
+    <a [routerLink]="[postTitle]">Detail</a>
+    <button class="btn btn-success" (click)="onGreen()"  >Love It</button> 
+    <button class="btn btn-danger" (click)="onRed()"  >Don't love it </button>
+    
+</li>
+
+
+
+
